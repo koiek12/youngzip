@@ -3,6 +3,8 @@ import compression.DeflaterCompressionStrategy;
 import decompression.DecompressionStrategy;
 import decompression.InflaterDecompressionStrategy;
 import model.FileEntry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import stream.*;
 
 import java.io.*;
@@ -14,6 +16,8 @@ import java.util.zip.DataFormatException;
 
 public class YoungZip {
 
+	private static Logger logger = LoggerFactory.getLogger(YoungZip.class);
+
 	public static void compress(String inputDirectory, String outputDirectory) throws IOException, InterruptedException, NoSuchAlgorithmException {
 		compress(inputDirectory, outputDirectory, 100*1024*1024, new DeflaterCompressionStrategy());
 	}
@@ -22,6 +26,7 @@ public class YoungZip {
 		Path inputDirPath = Paths.get(inputDirectory);
 		Path outputDirPath = Paths.get(outputDirectory);
 		if(!(Files.exists(inputDirPath))) {
+			logger.error("input directory dose not exist.");
 			throw new NoSuchFileException(inputDirectory);
 		}
 		if (!(Files.exists(outputDirPath))) {
@@ -49,7 +54,7 @@ public class YoungZip {
 				}
 				afos.closeEntry();
 			} catch (NoSuchFileException e) {
-				e.printStackTrace();
+				logger.warn(e.getMessage(), e);
 				continue;
 			}
 		}
@@ -65,6 +70,7 @@ public class YoungZip {
 		Path inputDirPath = Paths.get(inputDirectory);
 		Path outputDirPath = Paths.get(outputDirectory);
 		if (!(Files.exists(inputDirPath))) {
+			logger.error("input directory dose not exist.");
 			throw new NoSuchFileException(inputDirectory);
 		}
 		if (!(Files.exists(outputDirPath))) {
@@ -74,6 +80,7 @@ public class YoungZip {
 			.filter(path -> path.toString().endsWith("zip") && !Files.isDirectory(path))
 			.collect(Collectors.toList());
 		if(zipFiles.isEmpty()) {
+			logger.error("Zip file not found in the directory.");
 			throw new FileNotFoundException("Zip file not found in the directory");
 		}
 
@@ -104,16 +111,19 @@ public class YoungZip {
 		String inputDirectory = args[0];
 		String outputDirectory = args[1];
 		if(args.length >= 3) {
+			long originalSize = Files.walk(Paths.get(inputDirectory)).mapToLong( p -> p.toFile().length() ).sum();
 			long start = System.currentTimeMillis();
-			System.out.println("compressing...");
+			logger.info("compressing...");
 			int compressedSizeLimit = Integer.valueOf(args[2]);
 			compress(inputDirectory, outputDirectory, compressedSizeLimit*1024*1024, new DeflaterCompressionStrategy());
-			System.out.println("compression completed! elapsed time : " + ( System.currentTimeMillis() - start )/1000.0 );
+			long compressedSize = Files.walk(Paths.get(outputDirectory)).mapToLong( p -> p.toFile().length() ).sum();
+			logger.info("compression completed! elapsed time : " + ( System.currentTimeMillis() - start )/1000.0 );
+			logger.info("original size : " + originalSize + " => " + " compressed size : " + compressedSize);
 		} else if(args.length >= 2) {
-			System.out.println("decompressing...");
+			logger.info("decompressing...");
 			long start = System.currentTimeMillis();
 			decompress(inputDirectory, outputDirectory, new InflaterDecompressionStrategy());
-			System.out.println("decompression completed! elapsed time : " + ( System.currentTimeMillis() - start )/1000.0 );
+			logger.info("decompression completed! elapsed time : " + ( System.currentTimeMillis() - start )/1000.0 );
 		}
 	}
 }

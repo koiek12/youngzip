@@ -2,24 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8259d2f2-18a6-464f-ac52-9080d69f2468" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/stream/DecompressInputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stream/MultipartFileInputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stream/MultipartFileOutputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stream/ParallelCompressOutputStreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/text/text2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/text/text3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/text/text4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/text/text5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/text/text6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/text/text7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/text/text8.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/FileEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/FileEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stream/DecompressInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/DecompressInputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stream/MultipartFileInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/MultipartFileInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/YoungZip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/YoungZip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/stream/ParallelCompressOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stream/ParallelCompressOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CompressionStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompressionStrategy/CompressionStrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/YoungZip.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/YoungZip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compression/DeflaterCompressionStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compression/DeflaterCompressionStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/FileEntry$FileType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/FileEntry$FileType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/FileEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/FileEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stream/DecompressInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stream/DecompressInputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stream/MultipartFileInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stream/MultipartFileInputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stream/MultipartFileOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stream/MultipartFileOutputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stream/ParallelCompressOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stream/ParallelCompressOutputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/text/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/YoungZip.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compression/CompressionStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compression/DeflaterCompressionStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decompression/DecompressionStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decompression/InflaterDecompressionStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/ByteSignature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/FileEntry$FileType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/FileEntry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stream/DecompressInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stream/MultipartFileInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stream/MultipartFileOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stream/ParallelCompressOutputStream$CompressTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stream/ParallelCompressOutputStream$CompressedData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stream/ParallelCompressOutputStream$writeTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stream/ParallelCompressOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/util/RWUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,31 +48,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stream/MultipartFileOutputStreamTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stream/DecompressInputStreamTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-39">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/stream/DecompressInputStream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="855">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,10 +60,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CompressionStrategy/CompressionStrategyTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/YoungZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+            <state relative-caret-position="240">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,22 +72,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/decompression/InflaterDecompressionStrategy.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stream/ParallelCompressOutputStreamTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stream/DecompressInputStreamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="300">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -110,10 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/FileEntry.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stream/MultipartFileOutputStreamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="343">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,10 +111,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stream/ParallelCompressOutputStreamTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-104">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/ByteSignature.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stream/ParallelCompressOutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="178" selection-start-line="178" selection-end-line="180" selection-end-column="9" />
+            <state relative-caret-position="277">
+              <caret line="65" column="34" selection-start-line="65" selection-end-line="66" />
               <folding>
                 <element signature="e#3732#3733#0" expanded="true" />
                 <element signature="e#3793#3794#0" expanded="true" />
@@ -137,13 +144,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/text/text8.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -161,6 +165,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>FileEntry</find>
+      <find>stackTrace</find>
+      <find>logger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,12 +191,9 @@
         <option value="$PROJECT_DIR$/src/main/java/decompression/DecompressionStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/decompression/InflaterDecompressionStrategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/compression/DeflaterCompressionStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/YoungZip.java" />
         <option value="$PROJECT_DIR$/src/test/resources/text.txt" />
         <option value="$PROJECT_DIR$/src/main/java/stream/MultipartFileOutputStream.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/IntegrationTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/CompressionStrategyTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/stream/MultipartFileOutputStream.java" />
         <option value="$PROJECT_DIR$/src/test/java/stream/MultipartFileOutputStreamTest.java" />
@@ -199,10 +202,20 @@
         <option value="$PROJECT_DIR$/src/test/java/stream/ParallelCompressInputStreamTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/FileEntry.java" />
         <option value="$PROJECT_DIR$/src/test/java/stream/ParallelCompressOutputStreamTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stream/ParallelCompressOutputStream.java" />
         <option value="$PROJECT_DIR$/src/test/java/stream/DecompressInputStreamTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/stream/DecompressInputStream.java" />
         <option value="$PROJECT_DIR$/src/test/java/CompressionStrategy/CompressionStrategyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/text/text2.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/text/text3.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/text/text4.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/text/text5.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/text/text6.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/text/text7.txt" />
+        <option value="$PROJECT_DIR$/src/test/resources/text/text8.txt" />
+        <option value="$PROJECT_DIR$/src/test/java/IntegrationTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/stream/ParallelCompressOutputStream.java" />
+        <option value="$PROJECT_DIR$/src/main/java/YoungZip.java" />
       </list>
     </option>
   </component>
@@ -278,11 +291,6 @@
             <path>
               <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
               <item name="youngzip" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youngzip" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -297,30 +305,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youngzip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="compression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youngzip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="decompression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youngzip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
@@ -329,14 +313,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="stream" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
-              <item name="youngzip" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="youngzip" type="b2602c69:ProjectViewProjectNode" />
@@ -429,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DecompressInputStreamTest">
+  <component name="RunManager" selected="JUnit.IntegrationTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -438,6 +414,36 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CompressionStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="youngzip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CompressionStrategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="CompressionStrategy" />
+      <option name="MAIN_CLASS_NAME" value="CompressionStrategy.CompressionStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DecompressInputStreamTest and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="youngzip" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <patterns>
+        <pattern testClass="stream.DecompressInputStreamTest" />
+        <pattern testClass="stream.MultipartFileInputStreamTest" />
+        <pattern testClass="stream.MultipartFileOutputStreamTest" />
+        <pattern testClass="stream.ParallelCompressOutputStreamTest" />
+      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -458,23 +464,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DecompressInputStreamTest.read_before_getEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="youngzip" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stream" />
-      <option name="MAIN_CLASS_NAME" value="stream.DecompressInputStreamTest" />
-      <option name="METHOD_NAME" value="read_before_getEntry" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="youngzip" />
       <option name="PACKAGE_NAME" value="" />
@@ -485,33 +474,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParallelCompressOutputStreamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.test_compress_and_decompress_text" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="youngzip" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stream" />
-      <option name="MAIN_CLASS_NAME" value="stream.ParallelCompressOutputStreamTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParallelCompressOutputStreamTest.closeEntry_before_putNextEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="youngzip" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stream.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stream" />
-      <option name="MAIN_CLASS_NAME" value="stream.ParallelCompressOutputStreamTest" />
-      <option name="METHOD_NAME" value="closeEntry_before_putNextEntry" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
+      <option name="METHOD_NAME" value="test_compress_and_decompress_text" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -545,11 +512,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DecompressInputStreamTest" />
-        <item itemvalue="JUnit.DecompressInputStreamTest.read_before_getEntry" />
-        <item itemvalue="JUnit.ParallelCompressOutputStreamTest" />
-        <item itemvalue="JUnit.ParallelCompressOutputStreamTest.closeEntry_before_putNextEntry" />
         <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="JUnit.DecompressInputStreamTest and 3 more" />
+        <item itemvalue="JUnit.CompressionStrategyTest" />
+        <item itemvalue="JUnit.IntegrationTest.test_compress_and_decompress_text" />
+        <item itemvalue="JUnit.DecompressInputStreamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -563,7 +530,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574145643582</updated>
-      <workItem from="1574145646816" duration="44113000" />
+      <workItem from="1574145646816" duration="47849000" />
     </task>
     <task id="LOCAL-00001" summary="asdasd">
       <created>1574243520165</created>
@@ -572,43 +539,50 @@
       <option name="project" value="LOCAL" />
       <updated>1574243520165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="asdasd">
+      <created>1574258029844</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574258029844</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParallelCompressOutputStreamTest_compress_and_decompress - 2019.11.20 at 22h 10m 24s.xml">
-      <configuration name="ParallelCompressOutputStreamTest.compress_and_decompress" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_test_compress_and_decompress_text - 2019.11.20 at 23h 19m 28s.xml">
+      <configuration name="IntegrationTest.test_compress_and_decompress_text" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParallelCompressOutputStreamTest_compress_only_directory - 2019.11.20 at 22h 21m 09s.xml">
-      <configuration name="ParallelCompressOutputStreamTest.compress_only_directory" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_test_compress_and_decompress_text - 2019.11.20 at 23h 20m 24s.xml">
+      <configuration name="IntegrationTest.test_compress_and_decompress_text" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParallelCompressOutputStreamTest_compress_only_directory - 2019.11.20 at 22h 21m 23s.xml">
-      <configuration name="ParallelCompressOutputStreamTest.compress_only_directory" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_test_compress_and_decompress_text - 2019.11.20 at 23h 21m 07s.xml">
+      <configuration name="IntegrationTest.test_compress_and_decompress_text" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegrationTest - 2019.11.20 at 22h 28m 19s.xml">
+    <history-entry file="IntegrationTest - 2019.11.20 at 23h 25m 07s.xml">
       <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParallelCompressOutputStreamTest_closeEntry_before_putNextEntry - 2019.11.20 at 22h 29m 44s.xml">
-      <configuration name="ParallelCompressOutputStreamTest.closeEntry_before_putNextEntry" configurationId="JUnit" />
+    <history-entry file="IntegrationTest - 2019.11.20 at 23h 34m 34s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParallelCompressOutputStreamTest - 2019.11.20 at 22h 29m 51s.xml">
-      <configuration name="ParallelCompressOutputStreamTest" configurationId="JUnit" />
+    <history-entry file="IntegrationTest - 2019.11.20 at 23h 37m 28s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecompressInputStreamTest_read_before_getEntry - 2019.11.20 at 22h 33m 42s.xml">
-      <configuration name="DecompressInputStreamTest.read_before_getEntry" configurationId="JUnit" />
+    <history-entry file="IntegrationTest - 2019.11.20 at 23h 48m 03s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecompressInputStreamTest_read_before_getEntry - 2019.11.20 at 22h 34m 43s.xml">
-      <configuration name="DecompressInputStreamTest.read_before_getEntry" configurationId="JUnit" />
+    <history-entry file="CompressionStrategyTest - 2019.11.20 at 23h 49m 49s.xml">
+      <configuration name="CompressionStrategyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecompressInputStreamTest_read_before_getEntry - 2019.11.20 at 22h 35m 56s.xml">
-      <configuration name="DecompressInputStreamTest.read_before_getEntry" configurationId="JUnit" />
+    <history-entry file="DecompressInputStreamTest_and_3_more - 2019.11.20 at 23h 49m 55s.xml">
+      <configuration name="DecompressInputStreamTest and 3 more" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecompressInputStreamTest - 2019.11.20 at 22h 43m 08s.xml">
-      <configuration name="DecompressInputStreamTest" configurationId="JUnit" />
+    <history-entry file="IntegrationTest - 2019.11.20 at 23h 50m 03s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44113000" />
+    <option name="totallyTimeSpent" value="47849000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -621,7 +595,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -630,7 +603,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33547926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49893504" weight="0.32920355" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49893504" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Tool Output" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50106496" side_tool="true" weight="0.32920355" />
@@ -640,7 +613,7 @@
       <window_info anchor="bottom" id="ANTLR Preview" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" visible="true" weight="0.4120482" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" weight="0.4120482" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -690,34 +663,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="asdasd" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/stream/AbstractArchiveFileOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="492" column="30" selection-start-line="492" selection-start-column="30" selection-end-line="492" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/util/zip/DataFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/util/zip/Inflater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -801,13 +746,6 @@
     <entry file="file://$PROJECT_DIR$/youngzip.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="212" column="31" selection-start-line="212" selection-start-column="31" selection-end-line="212" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/nio/file/Path.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -845,13 +783,6 @@
             <element signature="e#1471#1472#0" expanded="true" />
             <element signature="e#1495#1496#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/ByteSignature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -917,13 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="717">
@@ -945,40 +869,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/util/RWUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="73" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/YoungZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -999,40 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stream/ParallelCompressOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="178" selection-start-line="178" selection-end-line="180" selection-end-column="9" />
-          <folding>
-            <element signature="e#3732#3733#0" expanded="true" />
-            <element signature="e#3793#3794#0" expanded="true" />
-            <element signature="e#3892#3893#0" expanded="true" />
-            <element signature="e#3939#3940#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/decompression/InflaterDecompressionStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stream/MultipartFileInputStreamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stream/MultipartFileOutputStreamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1049,24 +913,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CompressionStrategy/CompressionStrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/text/text2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/text/text3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/text/text4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/text/text5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/text/text6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/text/text7.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/text/text8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="1124" column="23" selection-start-line="1124" selection-start-column="23" selection-end-line="1124" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stream/DecompressInputStreamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
+        <state relative-caret-position="300">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stream/MultipartFileInputStreamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stream/MultipartFileOutputStreamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stream/ParallelCompressOutputStreamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="-104">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CompressionStrategy/CompressionStrategyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/ByteSignature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        <state relative-caret-position="90">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stream/ParallelCompressOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="65" column="34" selection-start-line="65" selection-end-line="66" />
+          <folding>
+            <element signature="e#3732#3733#0" expanded="true" />
+            <element signature="e#3793#3794#0" expanded="true" />
+            <element signature="e#3892#3893#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/YoungZip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

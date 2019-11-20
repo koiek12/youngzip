@@ -4,6 +4,8 @@ import compression.CompressionStrategy;
 import compression.DeflaterCompressionStrategy;
 import model.ByteSignature;
 import model.FileEntry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import util.RWUtil;
 
 import java.io.ByteArrayOutputStream;
@@ -21,7 +23,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * parallel using multi thread to speed up the compression.
  */
 public class ParallelCompressOutputStream extends OutputStream {
-
 	private static class CompressedData {
 		private long seqNum;
 		private byte[] data;
@@ -44,6 +45,8 @@ public class ParallelCompressOutputStream extends OutputStream {
 	 * A task that compress the given data and put it into queue.
 	 */
 	private static class CompressTask implements Callable<Boolean> {
+		private static Logger logger = LoggerFactory.getLogger(CompressTask.class);
+
 		private long seqNumber;
 		private byte[] chunk;
 		private CompressionStrategy compressionStrategy;
@@ -60,7 +63,7 @@ public class ParallelCompressOutputStream extends OutputStream {
 			try {
 				compressedDataQueue.put(new CompressedData(seqNumber, compressionStrategy.compress(chunk)));
 			} catch (InterruptedException e) {
-				e.printStackTrace();
+				logger.error(e.getMessage(), e);
 				return false;
 			}
 			return true;
@@ -72,14 +75,15 @@ public class ParallelCompressOutputStream extends OutputStream {
 	 * from PriorityBlockingQueue in order of sequnce number. This task should be run
 	 * only in single thread.
 	 */
-	private static class writeTask implements Callable<Boolean> {
+	private static class WriteTask implements Callable<Boolean> {
+		private static Logger logger = LoggerFactory.getLogger(WriteTask.class);
 
 		private OutputStream out;
 		private AtomicBoolean dataSubmitFinished;
 		private long seqNumber;
 		private PriorityBlockingQueue<CompressedData> compressedDataQueue;
 
-		public writeTask(OutputStream out, AtomicBoolean dataSubmitFinished, PriorityBlockingQueue<CompressedData> compressedDataQueue) {
+		public WriteTask(OutputStream out, AtomicBoolean dataSubmitFinished, PriorityBlockingQueue<CompressedData> compressedDataQueue) {
 			this.dataSubmitFinished = dataSubmitFinished;
 			this.seqNumber = 0;
 			this.out = out;
@@ -95,13 +99,13 @@ public class ParallelCompressOutputStream extends OutputStream {
 						out.write(compressedData.getData());
 						seqNumber++;
 					} else {
-						Thread.sleep(500);
+						Thread.sleep(100);
 					}
 				} catch (IOException ex) {
-					ex.printStackTrace();
+					logger.error(ex.getMessage(), ex);
 					return false;
 				} catch (InterruptedException e) {
-					e.printStackTrace();
+					logger.error(e.getMessage(), e);
 					return false;
 				}
 			}
@@ -156,7 +160,7 @@ public class ParallelCompressOutputStream extends OutputStream {
 		this.chunkBuffer = new ByteArrayOutputStream(chunkSize + 1024);
 
 		writeTaskExecutor.submit(
-			new writeTask(out, dataSubmitFinished, compressedDataQueue)
+			new WriteTask(out, dataSubmitFinished, compressedDataQueue)
 		);
 	}
 
