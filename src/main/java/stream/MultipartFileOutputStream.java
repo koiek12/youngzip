@@ -24,8 +24,14 @@ public class MultipartFileOutputStream extends OutputStream {
 	 * Creates a new output stream with the specified compression partSizeLimit
 	 */
 	public MultipartFileOutputStream(String filePath, int partSizeLimit) throws IOException {
+		if(filePath == null || filePath.isEmpty()) {
+			throw new IllegalArgumentException("Invalid file path.");
+		}
+		if(partSizeLimit <= 0) {
+			throw new IllegalArgumentException("Invalid partition size limit." + partSizeLimit);
+		}
 		if(!filePath.endsWith("zip")) {
-			throw new IOException("invalid file type");
+			throw new IOException("Invalid file type");
 		}
 		this.filePath = filePath;
 		this.partSizeLimit = partSizeLimit;

@@ -34,6 +34,22 @@ public class IntegrationTest {
 	}
 
 	@Test
+	public void test_compress_and_decompress_text() throws InterruptedException, NoSuchAlgorithmException, IOException, DataFormatException {
+		String inputDirectory = "src/test/resources/text";
+		String zipDirectory = "../comptest/zip";
+		String outputDirectory = "../comptest/dest";
+		long start = System.currentTimeMillis();
+		System.out.println("compressing...");
+		YoungZip.compress(inputDirectory, zipDirectory);
+		System.out.println("compression time : " + ( System.currentTimeMillis() - start )/1000.0 );
+
+		System.out.println("decompressing...");
+		start = System.currentTimeMillis();
+		YoungZip.decompress(zipDirectory, outputDirectory);
+		System.out.println("decompression time : " + ( System.currentTimeMillis() - start )/1000.0 );
+	}
+
+	@Test
 	public void test_compress_and_decompress1() throws InterruptedException, NoSuchAlgorithmException, IOException, DataFormatException {
 		String inputDirectory = "../linguist2";
 		String zipDirectory = "../comptest/zip";
