@@ -24,6 +24,12 @@ public class MultipartFileInputStream extends InputStream {
 
 
 	public MultipartFileInputStream(String filePath) throws IOException {
+		if(filePath == null || filePath.isEmpty()) {
+			throw new IllegalArgumentException("Invalid file path.");
+		}
+		if(!filePath.endsWith("zip")) {
+			throw new IOException("Invalid file type");
+		}
 		this.filePath = filePath;
 		this.partRead = 0;
 		this.partSize = getPartSize();

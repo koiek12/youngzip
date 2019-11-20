@@ -133,6 +133,12 @@ public class ParallelCompressOutputStream extends OutputStream {
 	 * Creates a new stream. Start writeTask thread.
 	 */
 	public ParallelCompressOutputStream(OutputStream out, int chunkSize, CompressionStrategy compressionStrategy) {
+		if(out == null || compressionStrategy == null) {
+			throw new IllegalArgumentException();
+		}
+		if(chunkSize <= 1024) {
+			throw new IllegalArgumentException("chunk size is too small");
+		}
 		this.out = out;
 		this.chunkSize = chunkSize;
 		this.compressionStrategy = compressionStrategy;
@@ -149,13 +155,18 @@ public class ParallelCompressOutputStream extends OutputStream {
 		this.currentFile = null;
 		this.chunkBuffer = new ByteArrayOutputStream(chunkSize + 1024);
 
-		writeTaskExecutor.submit(new writeTask(out, dataSubmitFinished, compressedDataQueue));
+		writeTaskExecutor.submit(
+			new writeTask(out, dataSubmitFinished, compressedDataQueue)
+		);
 	}
 
 	/**
 	 * Begins writing a new compressed file entry. Write file header information to chunk buffer.
 	 */
 	public void putNextEntry(FileEntry fileEntry) throws IOException {
+		if(fileEntry == null) {
+			throw new IllegalArgumentException("fileEntry is empty");
+		}
 		writeFileHeader(fileEntry);
 		currentFile = fileEntry;
 	}
@@ -165,6 +176,9 @@ public class ParallelCompressOutputStream extends OutputStream {
 	 * in chunk buffer, compress and write the data. Reset the chunk buffer for additional file.
 	 */
 	public void closeEntry() {
+		if(currentFile == null) {
+			throw new IllegalStateException("Put file entry into the stream before close.");
+		}
 		if(currentFile.getType() == FileEntry.FileType.DIRECTORY) {
 			compressTaskExecutor.submit(
 				new CompressTask(seqNumber++, chunkBuffer.toByteArray(), compressionStrategy, compressedDataQueue)
@@ -184,9 +198,12 @@ public class ParallelCompressOutputStream extends OutputStream {
 	}
 	/**
 	 * Finalize compressing. Compress and write the final trailer and wait for compression and write
-	 * thread to terminate.
+	 * thread to terminate. Must be called after writing all content.
 	 */
 	public void finish() throws InterruptedException, IOException, NoSuchAlgorithmException {
+		if(currentFile != null) {
+			throw new IllegalStateException("current file entry is not closed.");
+		}
 		chunkBuffer.reset();
 		writeFinalTrailer();
 		compressTaskExecutor.submit(
@@ -219,8 +236,13 @@ public class ParallelCompressOutputStream extends OutputStream {
 	}
 
 	public void write(byte[] b, int offset, int length) throws IOException {
-		if(currentFile == null || currentFile.getType() == FileEntry.FileType.DIRECTORY)
-			return;
+		if(currentFile == null) {
+			throw new IllegalStateException("no file entry to write");
+		}
+		if(currentFile.getType() == FileEntry.FileType.DIRECTORY) {
+			throw new IllegalStateException("can't write to directory");
+		}
+
 		chunkBuffer.write(b, offset, length);
 		if(chunkBuffer.size() >= chunkSize) {
 			compressTaskExecutor.submit(

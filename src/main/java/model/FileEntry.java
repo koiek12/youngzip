@@ -2,6 +2,7 @@ package model;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.Objects;
 
 public class FileEntry {
 	private String name;
@@ -52,5 +53,4 @@ public class FileEntry {
 			return FileType.FILE;
 		}
 	}
-
 }

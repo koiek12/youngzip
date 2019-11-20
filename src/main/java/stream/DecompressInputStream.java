@@ -27,11 +27,16 @@ public class DecompressInputStream extends InputStream {
 	public DecompressInputStream(InputStream in) throws IOException, DataFormatException {
 		this(in, new InflaterDecompressionStrategy());
 	}
-
 	/**
 	 * Creates a new stream. Decompress the first block and check its signature.
 	 */
 	public DecompressInputStream(InputStream in, DecompressionStrategy decompressionStrategy) throws IOException, DataFormatException {
+		if(in == null) {
+			throw new IllegalArgumentException("Inputstream is null.");
+		}
+		if(decompressionStrategy == null) {
+			throw new IllegalArgumentException("DecompressionStrategy is null.");
+		}
 		this.in = new PushbackInputStream(in, 1024*12);
 		this.decompressionStrategy = decompressionStrategy;
 		this.processingFile = null;
@@ -48,7 +53,7 @@ public class DecompressInputStream extends InputStream {
 	/**
 	 * Get next file to process.
 	 */
-	public FileEntry getNextEntry(){
+	public FileEntry getNextEntry() {
 		if(done) {
 			return null;
 		}
@@ -56,6 +61,9 @@ public class DecompressInputStream extends InputStream {
 	}
 
 	public void closeEntry() throws IOException {
+		if(currentFile == null) {
+			throw new IllegalStateException("Put file entry into the stream before close.");
+		}
 		if(done) {
 			return;
 		}
